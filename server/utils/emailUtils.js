@@ -4,8 +4,8 @@ const transporter = nodemailer.createTransport({
   port: 465,
   host: "smtp.gmail.com",
   auth: {
-    user: "sharmavipul01002@gmail.com",
-    pass: "meqq xysn gess obse",
+    user: "youremail@gmail.com",
+    pass: "app password", // Generate an app password using Google 2-factor authentication
   },
   secure: true,
 });
