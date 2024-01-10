@@ -14,7 +14,7 @@ async function signup(req, res) {
 
     const verificationLink = emailUtils.generateVerificationLink(user._id);
     const mailData = {
-      from: "sharmavipul01002@gmail.com",
+      from: "youremail@gmail.com",
       to: user.email,
       subject: "Email verification for FitFlow app.",
       html: `
@@ -68,7 +68,7 @@ async function login(req, res) {
       } else if (!user.emailVerified) {
         const verificationLink = emailUtils.generateVerificationLink(user._id);
         const mailData = {
-          from: "sharmavipul01002@gmail.com",
+          from: "youremail@gmail.com",
           to: user.email,
           subject: "Email verification for FitFlow app.",
           html: `
@@ -138,7 +138,7 @@ async function forgotPassword(req, res) {
 
       const verificationLink = `http://localhost:3001/auth/forgot-password?userEmail=${user.email}&tempPassword=${t}`;
       const mailData = {
-        from: "sharmavipul01002@gmail.com",
+        from: "youremail@gmail.com",
         to: user.email,
         subject: "Password reset for FitFlow app.",
         html: `
